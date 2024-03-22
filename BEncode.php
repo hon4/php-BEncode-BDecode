@@ -4,7 +4,7 @@
    ╚══════════════════╝
    │ Coded by: hon
    │ Date: 22-03-2024
-   │ Version: 1.0.0 (b1)
+   │ Version: 1.0.0 (b2)
    │ hon-code.blogspot.com
    │ honcode.blogspot.com
    │ github.com/hon4
@@ -40,7 +40,7 @@ function BEncode_list($l){
 }
 function BEncode_core($x){
 	$r="";
-	if(is_int($x)){
+	if(is_numeric($x)){
 		$r.=BEncode_int($x);
 	}elseif(is_array($x)){
 		$zk=array_keys($x);
